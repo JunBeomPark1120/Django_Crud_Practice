@@ -20,5 +20,8 @@ from crud_app import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('index/', views.index)
+    
+    # Read 표현
+    path('index/', views.index),
+    path('posts/<int:id>/', views.detail)
 ]
