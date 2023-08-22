@@ -23,5 +23,9 @@ urlpatterns = [
     
     # Read 표현
     path('index/', views.index),
-    path('posts/<int:id>/', views.detail)
+    path('posts/<int:id>/', views.detail),
+    
+    # Create 표현
+    path('posts/new/', views.new),
+    path('posts/create/', views.create)
 ]
