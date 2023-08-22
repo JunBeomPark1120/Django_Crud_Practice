@@ -38,3 +38,10 @@ def create(request):
     post.save()
     
     return redirect(f'/posts/{post.id}/')
+
+# delete 관련 함수
+def delete(request, id):
+    post = Post.objects.get(id=id)
+    post.delete()
+    
+    return redirect('/index/')
